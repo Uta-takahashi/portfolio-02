@@ -1,0 +1,18 @@
+@import './mq';
+@import '../setting/config';
+
+@mixin inner($max-width: $layout-width-inner) {
+    max-width: $max-width;
+    margin: 0 auto;
+    box-sizing: content-box;
+
+    @include mq(tab) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    
+    @include mq(sp) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}

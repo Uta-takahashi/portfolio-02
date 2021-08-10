@@ -1,0 +1,25 @@
+// breadcrumb
+
+.breadcrumb {
+
+    margin-bottom: 9.7rem;
+
+    @include mq(sp) {
+        margin-bottom: 4rem;
+    }
+
+    a {
+        color: $color-text;
+        transition: opacity .3s;
+
+        &:hover {
+            opacity: .6;
+        }
+    }
+
+    span  {
+        display: inline-block;
+        margin: 0 0.5rem;
+    }
+
+}

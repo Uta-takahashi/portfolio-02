@@ -1,0 +1,34 @@
+// fnav
+
+.fnav {
+    &-list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15.6rem;
+
+        @include mq(sp) {
+            margin-bottom: 7rem;
+        }
+    }
+    
+    &-item {
+        display: block;
+        width: 26px;
+
+        + .fnav-item {
+            margin-left: 3.4rem;
+            
+            @include mq(sp) {
+                margin-left: 2.8rem;
+            }
+        }
+
+        a {
+            display: block;
+            writing-mode: vertical-rl;
+            font-size: 1.8rem;
+            color: $color-text;
+            letter-spacing: 1em;
+        }
+    }
+}

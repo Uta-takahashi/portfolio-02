@@ -1,0 +1,42 @@
+// plans
+
+.plans {
+    background: url(../../img/bg02.png) no-repeat center center / cover;
+
+    &-inner {
+        @include inner;
+        padding-top: 12rem;
+        padding-bottom: 14.4rem;
+
+        @include mq(sp) {
+            padding-bottom: 8rem;
+        }
+    }
+
+    &-title {
+        @include section-title;
+        margin-bottom: 6.5rem;
+
+        @include mq(sp) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &-list {
+        @include mq(pc) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &-item {
+        @include mq(pc) {
+            width: calc((100% - 15.845%) / 3);
+        }
+
+        @include mq(sp) {
+            margin-bottom: 5rem;
+        }
+    }
+}

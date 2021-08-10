@@ -1,0 +1,80 @@
+// top
+
+.top {
+    background-image: url(../../img/bg.png);
+
+    &-inner {
+        padding-top: 15rem;
+        padding-bottom: 10rem;
+        max-width: 940px;
+        width: 100%;
+        margin: 0 auto;
+
+        @include mq(sp) {
+            padding: 6rem 1.5rem;
+        }
+    }
+    
+    &-content {
+        @include mq(pc) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+
+        @include mq(sp) {
+            max-width: 390px;
+            margin: 0 auto;
+        }
+    }
+
+    &-heading {
+        font-size: 2.8rem;
+        line-height: 2;
+        
+        @include mq(pc) {
+            writing-mode: vertical-rl;
+            text-indent: -3.1em;
+            letter-spacing: 15px;
+        }
+
+        @include mq(sp) {
+            font-size: 2.4rem;
+            letter-spacing: 8px;
+            line-height: 1.7;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &-text {
+        line-height: 2;
+        letter-spacing: 6px;
+
+        @include mq(pc) {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+
+        @include mq(sp) {
+            font-size: 1.4rem;
+            line-height: 1.7;
+            letter-spacing: 0;
+            padding-left: 1rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &-name {
+        font-size: 2.2rem;
+        letter-spacing: 15px;
+        text-align: right;
+
+        @include mq(pc) {
+            writing-mode: vertical-rl;
+        }
+
+        @include mq(sp) {
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+
+
+// レイアウト幅
+$layout-width-inner: 1180px;
+
+// ブレークポイント
+$breakpoints: (
+	"sp": "(max-width: 767px)",
+	"tab-only": "(min-width: 768px) and (max-width: #{$layout-width-inner - 1px})",
+	"tab": "(max-width: #{$layout-width-inner - 1px})",
+	"pc": "(min-width: 768px)",
+	"pc-only": "(min-width: #{$layout-width-inner})",
+	"retina": "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)",
+);
+
+//サイトで使用するカラー
+$color-accent: #978F10;
+$color-text: #000;
+
+// フォント
+$font-family-default: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+// $font-family-english: "Lato", sans-serif;

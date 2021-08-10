@@ -1,0 +1,200 @@
+// page
+
+.page {
+    position: relative;
+    
+    @include mq(pc) {
+        margin-bottom: 22.2rem;
+    }
+
+    @include mq(sp) {
+        margin-bottom: 4rem;
+    }
+
+    &:first-child {
+        .page-img {
+            @include mq(sp) {
+                margin-right: 2rem;
+            }
+        }
+        
+        .page-body {
+            @include mq(pc) {
+                padding-left: 20.6781%;
+                padding-right: 2rem;
+                right: 0;
+            }
+            
+            @include mq(sp) {
+                margin-left: auto;
+            }
+        }
+        
+    }
+    &:nth-child(2) {
+        .page-img {
+            margin-left: auto;
+            
+            @include mq(sp) {
+                margin-left: 0;
+                margin-right: 2rem;
+            }
+        }
+        
+        .page-body {
+            @include mq(pc) {
+                padding-left: 6rem;
+                padding-right: 19rem;
+                left: 0;
+            }
+            
+            @include mq(sp) {
+                margin-left: auto;
+            }
+        }
+    }
+    &:nth-child(3) {
+        .page-img {
+            @include mq(sp) {
+                margin-right: 2rem;
+            }
+        }
+
+        .page-body {
+            @include mq(pc) {
+                padding-left: 20.6781%;
+                padding-right: 2rem;
+                right: 0;
+            }
+
+            @include mq(sp) {
+                margin-left: auto;
+            }
+        }
+    }
+
+    &-img {
+        max-width: 525px;
+        max-height: 300px;
+        width: 100%;
+        height: 300px;
+        position: relative;
+        z-index: 2;
+
+        @include mq(tab-only) {
+            width: 50%;
+        }
+    }
+
+    &-body {
+        background-image: url(../../img/bg.png);
+        
+        @include mq(pc) {
+            position: absolute;
+            width: 68.8984%;
+            top: 57px;
+            padding-top: 6rem;
+            padding-bottom: 8rem;
+            z-index: 1;
+        }
+
+        @include mq(tab) {
+            padding-bottom: 6rem;
+        }
+
+        @include mq(sp) {
+            width: 100%;
+            max-width: 525px;
+            padding-top: 10rem;
+            padding-bottom: 3rem;
+            padding-left: 2rem;
+            padding: 10rem 2rem 3rem;
+            margin-top: -8rem;
+        }
+    }
+
+    &-title {
+        font-size: 2.4rem;
+        margin-bottom: 5.2rem;
+
+        @include mq(tab) {
+            margin-bottom: 4rem;
+        }
+
+        @include mq(sp) {
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &-text {
+        line-height: 2;
+        margin-bottom: 5.2rem;
+
+        @include mq(tab) {
+            margin-bottom: 4rem;
+        }
+
+        @include mq(sp) {
+            font-size: 1.4rem;
+            line-height: 1.7;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &-note {
+        font-size: 1.4rem;
+    }
+
+}
+
+.page {
+    &._rooms {
+        &:first-child {
+            .page-img {
+                background: url(../../img/oheya01.jpg) no-repeat center center / cover;
+            }
+        }
+        &:nth-child(2) {
+            .page-img {
+                background: url(../../img/oheya02.jpg) no-repeat center center / cover;
+            }
+        }
+        &:nth-child(3) {
+            .page-img {
+                background: url(../../img/oheya03.jpg) no-repeat center center / cover;
+            }
+        }
+    }
+
+    &._foods {
+        &:first-child {
+            .page-img {
+                background: url(../../img/menu01.jpg) no-repeat center center / cover;
+            }
+        }
+        &:nth-child(2) {
+            .page-img {
+                background: url(../../img/menu02.jpg) no-repeat center center / cover;
+            }
+        }
+        &:nth-child(3) {
+            .page-img {
+                background: url(../../img/menu03.jpg) no-repeat center center / cover;
+            }
+        }
+    }
+
+    &._onsen {
+        &:first-child {
+            .page-img {
+                background: url(../../img/onsen01.jpg) no-repeat center center / cover;
+            }
+        }
+        &:nth-child(2) {
+            .page-img {
+                background: url(../../img/onsen02.jpg) no-repeat center center / cover;
+            }
+        }
+    }
+}

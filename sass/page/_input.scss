@@ -1,0 +1,33 @@
+// input
+
+.input {
+    margin-bottom: 1.4rem;
+
+    input, select {
+        width: 100%;
+        line-height: 32px;
+        appearance: none;
+        border: 1px solid #e7e7e7;
+        padding-left: 1rem;
+        appearance: none;
+        font-size: 16px;
+    }
+
+    select {
+        &._dummy {
+            color: #797878;
+        }
+    }
+
+    &-label {
+        margin-bottom: 1rem;
+    }
+
+    &:last-child {
+        margin-bottom: 6.4rem;
+
+        @include mq(sp) {
+            margin-bottom: 4rem;
+        }
+    }
+}

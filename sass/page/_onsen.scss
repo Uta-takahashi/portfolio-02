@@ -1,0 +1,53 @@
+// onsen
+
+.onsen {
+    @include inner;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 7.4rem;
+    margin-bottom: 9.6rem;
+
+    @include mq(sp) {
+        padding-bottom: 6rem;
+        margin-bottom: 8rem;
+    }
+
+    &-inner {
+        @include inner;
+        max-width: 880px;
+        padding-top: 9.5rem;
+
+        @include mq(sp) {
+            padding-top: 6rem;
+        }
+    }
+
+    &-title {
+        font-size: 2.6rem;
+        text-align: center;
+        padding-bottom: 5.15rem;
+        border-bottom: 1px solid #e7e7e7;
+
+        @include mq(sp) {
+            font-size: 2.4rem;
+            padding-bottom: 3.6rem;
+        }
+    }
+
+    &-item {
+        display: flex;
+        padding: 1.75rem 0;
+        border-bottom: 1px solid #e7e7e7;
+    }
+
+    &-head {
+        width: 25%;
+    }
+
+    &-info {
+        flex: 1;
+
+        @include mq(sp) {
+            font-size: 1.4rem;
+        }
+    }
+}

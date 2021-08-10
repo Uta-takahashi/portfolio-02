@@ -1,0 +1,70 @@
+//gnav
+
+.gnav {
+    
+    &-list {
+        @include mq(pc) {
+            display: flex;
+        }
+    }
+
+    &-home {
+        @include mq(sp) {
+            text-align: center;
+            line-height: 1.7;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    &-item {
+
+        @include mq(sp) {
+            line-height: 1.7;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        a {
+            color: #fff;
+            padding: 5px 0;
+            transition: border-bottom 1s;
+
+            @include mq(sp) {
+                color: $color-text;
+            }
+            
+            &:hover {
+                border-bottom: 1px solid #fff;
+            }
+
+            ._scrolled & {
+                color: $color-text;
+
+                &:hover {
+                    border-bottom: 1px solid $color-text;
+                }
+            }
+        }
+
+        + .gnav-item {
+            @include mq(pc) {
+                margin-left: 3rem;
+            }
+        }
+    }
+
+}
+
+._page {
+
+    .gnav-item  {
+        a {
+            color: $color-text;
+        }
+    }
+
+} 

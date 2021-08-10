@@ -1,0 +1,24 @@
+// plan
+
+.plan {
+    &-img {
+        margin-bottom: 3.2rem;
+
+        @include mq(sp) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &-heading {
+        font-size: 2rem;
+        margin-bottom: 3.6rem;
+
+        @include mq(sp) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &-text {
+        line-height: 2;
+    }
+}

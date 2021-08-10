@@ -1,0 +1,84 @@
+// footer
+
+.footer {
+    text-align: center;
+
+    &-content {
+        padding-top: 6.5rem;
+        padding-bottom: 6rem;
+        background-image: url(../../img/bg03.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include mq(sp) {
+            padding: 4rem 0;
+        }
+    }
+
+    &-logo {
+        position: relative;
+        margin-bottom: 7.2rem;
+
+        @include mq(sp) {
+            margin-bottom: 5rem;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: url(../../img/section-logo.png);
+            top: -125%;
+        }
+
+        a {
+            font-size: 3.2rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            color: $color-text;
+
+            @include mq(sp) {
+                font-size: 2.8rem;
+            }
+        }
+    }
+
+    &-address {
+        margin-bottom: 2.3rem;
+
+        @include mq(sp) {
+            font-size: 1.4rem;
+        }
+
+        span {
+            display: inline-block;
+
+            + span {
+                margin-left: 2rem;
+                letter-spacing: 0.18em;
+            }
+        }
+    }
+
+    &-tell {
+        @include mq(sp) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &-copyright {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #fff;
+        background: #000;
+        padding: 2.3rem 0;
+    }
+
+}

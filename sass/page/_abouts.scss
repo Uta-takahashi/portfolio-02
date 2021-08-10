@@ -1,0 +1,18 @@
+// abouts
+
+.abouts {
+
+    &-inner {
+        padding-top: 10.5rem;
+        padding-bottom: 8rem;
+    }
+
+    &-item {
+        + .abouts-item {
+            @include mq(pc) {
+                margin-top: 12rem;
+            }
+        }
+    }
+
+}

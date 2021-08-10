@@ -1,0 +1,71 @@
+// pages (rooms/foods/onsen)
+
+.pages {
+    @include mq(pc) {
+        padding-top: 80px;
+    }
+
+    @include mq(sp) {
+        padding-top: 60px;
+    }
+
+    &-visual {
+        height: 500px;
+        position: relative;
+
+        @include mq(sp) {
+            height: 40vh;
+        }
+
+        &._rooms {
+            background: url(../../img/pages-visual01.png) no-repeat center center / cover;
+        }
+        
+        &._foods {
+            background: url(../../img/pages-visual02.png) no-repeat center center / cover;
+        }
+
+        &._onsen {
+            background: url(../../img/pages-visual03.png) no-repeat center center / cover;
+        }
+    }
+
+    &-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3.4rem;
+        color: #fff;
+
+        @include mq(sp) {
+            font-size: 2.8rem;
+        }
+    }
+
+    &-inner {
+        @include inner;
+        padding-top: 3.6rem;
+        padding-bottom: 6.6rem;
+
+        @include mq(sp) {
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+        }
+
+        ._onsen & {
+            border-bottom: 1px solid #e7e7e7;
+        }
+    }
+
+    &-desc {
+        text-align: center;
+        line-height: 2;
+        margin-bottom: 7.8rem;
+
+        @include mq(sp) {
+            font-size: 1.4rem;
+            margin-bottom: 4rem;
+        }
+    }
+}

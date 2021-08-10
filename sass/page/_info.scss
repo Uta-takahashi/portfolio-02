@@ -1,0 +1,50 @@
+// info
+
+.info {
+    display: flex;
+    background-color: #f6f6f6;
+    padding: 1.5rem 1rem;
+
+    @include mq(sp) {
+        padding: 1rem;
+    }
+
+    &-img {
+        width: 100px;
+        min-width: 100px;
+        height: 100px;
+        overflow: hidden;
+        position: relative;
+
+        @include mq(sp) {
+            width: 80px;
+            min-width: 80px;
+            height: 80px;
+        }
+
+        img {
+            position: absolute;
+            width: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &-body {
+        margin-left: 3rem;
+
+        @include mq(sp) {
+            margin-left: 1.5rem;
+        }
+    }
+
+    &-date {
+        font-size: 1.4rem;
+    }
+
+    &-text {
+        @include mq(sp) {
+            font-size: 1.4rem;
+        }
+    }
+}
